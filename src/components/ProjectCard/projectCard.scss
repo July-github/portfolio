@@ -1,0 +1,14 @@
+@import '../../sass/variables';
+
+.projectCard_Wrapper{
+    display: flex;
+    width: 80%;
+    height: 150px;
+    border: solid 0.1px $quatro;
+    border-radius: 10px;
+    margin: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

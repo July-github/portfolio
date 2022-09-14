@@ -1,0 +1,16 @@
+@import '../../sass/variables';
+@import '../../components/ProjectCard/projectCard.scss';
+
+.home_wrapper{
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandGallery_Wrapper{
+    display: flex;
+    width: 20%;
+    height: 100%;
+}
