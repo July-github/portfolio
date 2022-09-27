@@ -1,0 +1,11 @@
+.header_Wrapper{
+    color: $tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $header_height;
+    width: 100%;
+    font-size: 30px;
+    position: fixed;
+    background-color: transparent;
+}
