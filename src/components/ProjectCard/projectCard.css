@@ -1,0 +1,51 @@
+.projectCard_Wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 200px;
+  margin: 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: solid 0.1px #fde79f;
+}
+
+.projectCard_Wrapper > .projectCard_Opacity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: black;
+}
+
+.projectCard_Wrapper > .projectCard_Opacity > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.projectCard_Wrapper > .projectCard_Opacity > img:hover {
+  opacity: 1;
+  cursor: pointer;
+  animation: scale 1 0.5 ease-in-out;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -webkit-animation: scale 1 0.5 ease-in-out;
+}
+/*# sourceMappingURL=projectCard.css.map */

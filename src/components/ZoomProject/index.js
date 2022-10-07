@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types'
-import FishEye from '../../assets/CardImg/FishEye.png'
 
-export function ZoomProject(){
+export function ZoomProject({zoomImage}){
 
     return(
-        <div className='ZoomProject_Wrapper'>
-            <img src={FishEye} alt='fish'></img>
+        <div className='zoomProject_Wrapper'>
+            <img src={zoomImage} alt='fish'></img>
         </div>
     )
 }
 
 ZoomProject.propTypes = {
-    zoom_Img: PropTypes.string.isRequired,
+    zoomImage: PropTypes.string.isRequired,
 }

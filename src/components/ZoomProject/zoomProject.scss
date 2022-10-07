@@ -1,7 +1,11 @@
-.ZoomProject_Wrapper{
+.zoomProject_Wrapper{
     display: flex;
-    width: 70%;
+    width: 75%;
     height: 100vh;
-    border: solid 0.1px $tertiary;
-    margin: 5px 5px 5px 60px;
+    margin: 5px 5px 5px 30px;
+
+    > img {
+        width: 100%;
+        object-fit: contain;
+    }
 }

@@ -1,11 +1,21 @@
 @import './variables';
 
 @mixin card_transform {
-    animation: scale 1 0.5 ease-in-out;
+    animation: scale 2 ease-in-out;
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
     -ms-transform: scale(1.02);
     -o-transform: scale(1.02);
-    -webkit-animation: scale 1 0.5 ease-in-out;
+    -webkit-animation: scale 2 ease-in-out;
 }
+
+// @mixin zoom_transform {
+//     animation: translate 2 ease-in;
+//     transform: translate(-150%);
+//     -webkit-transform: translate(-150%);
+//     -moz-transform: translate(-150%);
+//     -ms-transform: translate(-150%);
+//     -o-transform: translate(-150%);
+//     -webkit-animation: translate 2 ease-in;
+// }

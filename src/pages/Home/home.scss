@@ -16,7 +16,48 @@
 .bandGallery_Wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 20%;
     box-sizing: border-box;
+
+    > .arrowWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 22%;
+        background-color: black;
+        position: absolute;
+        z-index: 10;
+
+        > .arrowUp, .arrowDown {
+            color: white;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            z-index: 100;
+        }
+        > .arrowUp {
+            top: 15%;
+        }
+        > .arrowDown {
+            bottom:15%;
+        }
+    }
+
+    > .arrowWrapperTop {
+        top: 0;
+    }
+    > .arrowWrapperBottom {
+        bottom:0;
+    }
+}
+
+.move {
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
 }
