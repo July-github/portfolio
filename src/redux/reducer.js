@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     error: null,
-    zoom: false
+    zoom: false,
+    carrouselVisible: false 
 }
 
 const { actions, reducer } = createSlice({

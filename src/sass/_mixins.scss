@@ -10,12 +10,16 @@
     -webkit-animation: scale 2 ease-in-out;
 }
 
-// @mixin zoom_transform {
-//     animation: translate 2 ease-in;
-//     transform: translate(-150%);
-//     -webkit-transform: translate(-150%);
-//     -moz-transform: translate(-150%);
-//     -ms-transform: translate(-150%);
-//     -o-transform: translate(-150%);
-//     -webkit-animation: translate 2 ease-in;
-// }
+@mixin carrousel_show {
+    width: 12%;
+    transition: width 1.5s cubic-bezier(.06,.74,1,.52);
+    -webkit-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
+    -moz-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
+    -ms-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
+    -o-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
+    
+    .arrowDown,.arrowUp {
+        height: 80px;
+        width: 80px;    
+    }
+}

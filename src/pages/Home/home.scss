@@ -1,63 +1,67 @@
 @import '../../sass/variables';
 @import '../../sass/mixins';
+@import '../../sass/keyframes';
 @import '../../components/ProjectCard/projectCard.scss';
 @import '../../components/ZoomProject/zoomProject.scss';
+@import '../../components/Carrousel/carrousel.scss';
+@import '../../components/Welcome/welcome.scss';
+@import '../../components/Logos/logos.scss';
 
 .home_wrapper{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 10px;
+    padding: 0px 10px;
     height: 100vh;
-    box-sizing: border-box;
     overflow-y: hidden;
 }
 
-.bandGallery_Wrapper{
+.zoom_wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    box-sizing: border-box;
+    width: 100%;
+}
 
-    > .arrowWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 22%;
-        background-color: black;
-        position: absolute;
-        z-index: 10;
+.carrousel_arrow {
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    margin: auto;
+    animation: carrousel_arrow 2s 2s infinite;
+    -webkit-animation: carrousel_arrow 2s 2s infinite;
 
-        > .arrowUp, .arrowDown {
-            color: white;
-            height: 80px;
-            width: 80px;
-            position: absolute;
-            z-index: 100;
-        }
-        > .arrowUp {
-            top: 15%;
-        }
-        > .arrowDown {
-            bottom:15%;
-        }
-    }
-
-    > .arrowWrapperTop {
-        top: 0;
-    }
-    > .arrowWrapperBottom {
-        bottom:0;
+    &:hover {
+        cursor: pointer;
     }
 }
 
-.move {
-    transform: translateY(100px);
-    -webkit-transform: translateY(100px);
-    -moz-transform: translateY(100px);
-    -ms-transform: translateY(100px);
-    -o-transform: translateY(100px);
+.cards {
+    display: flex;
+    width: 400px;
+    visibility: hidden;
+    flex-direction: column;
+    animation: cards_entrance 14s ease-in;
+    -webkit-animation: cards_entrance 14s ease-in;
+
+    >.projectCard_Wrapper {
+        
+
+        >.projectCard_Opacity > img {
+            height: 200px;
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%);
+        }
+    }
+}
+
+.cards div:nth-child(even) {
+    animation: carrousel_entrance 7s ease-in;
+    -webkit-animation: carrousel_entrance 7s ease-in;
+}
+
+.cards div:nth-child(odd) {
+    animation: carrousel_entrance 8s ease-in;
+    -webkit-animation: carrousel_entrance 8s ease-in;
 }

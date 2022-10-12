@@ -1,0 +1,18 @@
+.logos_wrapper {
+    display: flex;
+    align-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px;
+    width: auto;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    
+    >img {
+        height: 60px;
+        width: auto;
+    }
+}

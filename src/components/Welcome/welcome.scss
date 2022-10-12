@@ -1,0 +1,36 @@
+@import '../../sass/keyframes';
+
+.welcome_container {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+}
+
+.welcome_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.welcome, .Iam, .welcome_profile > a {
+    text-decoration: none;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align:left;
+    display: flex;
+    line-height: 2;
+    animation: welcome 3s cubic-bezier(.17,.67,.83,.67);
+    -webkit-animation: welcome 3s cubic-bezier(.17,.67,.83,.67);
+}
+
+.welcome_profile {
+    height: 400px;
+    width: 400px;
+    margin-right: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

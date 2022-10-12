@@ -1,0 +1,32 @@
+.error_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    height: 100vh;
+    background-image: url('../../assets/DSCF3361.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.error_backToProjects{
+    margin-top: 80px;
+}
+
+.error_backToProjects > a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    height: 100vh;
+}

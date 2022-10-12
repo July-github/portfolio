@@ -1,0 +1,99 @@
+
+@keyframes welcome {
+    0%{
+        margin: auto -200%;
+        color: white;
+    }
+    25%{
+        margin: auto -100%;
+        color: white;
+    }
+    65%{
+        margin: auto 0%;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    100%{
+        margin: none;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes carrousel_arrow {
+    0%{
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        color: rgba(255, 255, 255, 0.5);
+    }
+    50%{
+        color: rgba(255, 255, 255, 1);
+    }
+    100%{
+        transform: translate(-60px);
+        -webkit-transform: translate(-60px);
+        -moz-transform: translate(-60px);
+        -ms-transform: translate(-60px);
+        -o-transform: translate(-60px);
+}
+}
+
+@keyframes carrousel_entrance {
+    0%{
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(300%);
+        -webkit-transform: translateX(300%);
+        -moz-transform: translateX(300%);
+        -ms-transform: translateX(300%);
+        -o-transform: translateX(300%);
+    }
+    100%{
+        transform: translateX(600%);
+        -webkit-transform: translateX(600%);
+        -moz-transform: translateX(600%);
+        -ms-transform: translateX(600%);
+        -o-transform: translateX(600%);
+    }
+}
+@keyframes carrousel_borders {
+    0%{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+}
+    50%{
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+}
+    100%{
+        transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -o-transform: translateX(200%);
+}
+}
+
+@keyframes cards_entrance {
+    0%{
+        visibility: visible;
+    }
+    99%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}

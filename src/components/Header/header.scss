@@ -1,11 +1,26 @@
 .header_Wrapper{
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: $header_height;
     width: 100%;
-    font-size: 30px;
     position: fixed;
+    z-index: 50;
     background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+
+    > a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+    
+    > .header_projet {
+        margin-right: 10px;
+    }
+    > .header_apropos {
+        margin-left: 10px;
+    }
 }

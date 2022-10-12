@@ -1,66 +1,88 @@
 import { ProjectCard } from '../../components/ProjectCard'
 import { ZoomProject } from '../../components/ZoomProject'
-import ArgentBankHome from '../../assets/CardImg/ArgentBankHome.png'
-import BilledDash from '../../assets/CardImg/BilledDash.png'
-import FishEye from '../../assets/CardImg/FishEye.png'
-import HRNetHome from '../../assets/CardImg/HRNetHome.png'
-import Kasa from '../../assets/CardImg/KasaHome.png'
-import PetitsPlats from '../../assets/CardImg/PetitsPlats.png'
-import SportSee from '../../assets/CardImg/SportSeeDash.png'
-import { useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { transformToZoom } from '../../redux/actions'
-import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
+import { Carrousel } from '../../components/Carrousel'
+import { useEffect, useState } from 'react'
+import { datas } from '../../datas/data'
+import { Welcome } from '../../components/Welcome/index'
+import { AiOutlineDoubleLeft } from "react-icons/ai";
+import { Logos } from '../../components/Logos'
 
 export function Home(){
-    const [zoomImg, setZoomImg] = useState(FishEye)
-    const dispatch = useDispatch()
-    const zoomState = dispatch(transformToZoom())
-console.log(zoomState)
+    const [zoomImg, setZoomImg] = useState('')
+    const [zoomLogoReact, setZoomLogoReact] = useState(false)
+    const [zoomLogoRedux, setZoomLogoRedux] = useState(false)
+    const [zoomLogoJest, setZoomLogoJest] = useState(false)
+    const [carrouselVisible, setcarrouselVisible] = useState(false)
+    const [entrance, setEntrance] = useState(false)
+
+    useEffect(()=> {
+        const timer = setTimeout(()=> setEntrance(true), 4000)
+        return ()=> (clearTimeout(timer))
+    }, [])
+
+    function showCarrousel(){
+        carrouselVisible ? (setcarrouselVisible(false)) : setcarrouselVisible(true)
+    }
 
     return(
-        <div className='home_wrapper'>
-            <ZoomProject 
-                zoomImage={zoomImg}
-            />
-            <div className='bandGallery_Wrapper'>
-                <div className='arrowWrapper arrowWrapperTop'>
-                    <IoIosArrowUp className='arrowUp'/>
-                </div>  
-                <div className='cards_Wrapper'>
-                    <ProjectCard 
-                        card_Img={ArgentBankHome}
-                        setZoomImage={()=>setZoomImg(ArgentBankHome)}
-                    />
-                    <ProjectCard 
-                        card_Img={BilledDash}
-                        setZoomImage={()=>setZoomImg(BilledDash)}
-                    />
-                    <ProjectCard 
-                        card_Img={FishEye}
-                        setZoomImage={()=>setZoomImg(FishEye)}
-                    />
-                    <ProjectCard 
-                        card_Img={HRNetHome}
-                        setZoomImage={()=>setZoomImg(HRNetHome)}
-                    />
-                    <ProjectCard 
-                        card_Img={Kasa}
-                        setZoomImage={()=>setZoomImg(Kasa)}
-                    />
-                    <ProjectCard 
-                        card_Img={PetitsPlats}
-                        setZoomImage={()=>setZoomImg(PetitsPlats)}
-                    />
-                    <ProjectCard 
-                        card_Img={SportSee}
-                        setZoomImage={()=>setZoomImg(SportSee)}
-                    />
-                </div>
-                <div className='arrowWrapper arrowWrapperBottom'>
-                    <IoIosArrowDown className='arrowDown'/>
-                </div>
+        !entrance? 
+            <div className='cards'>
+            {datas.map(el => 
+                <ProjectCard
+                    key={el.id}
+                    card_Img={el.img}
+                />
+            )}
             </div>
+        :
+        <div className='home_wrapper'>
+            {zoomImg? (
+                <div className='zoom_wrapper'>
+                    <Logos                                 
+                        react={zoomLogoReact}
+                        redux={zoomLogoRedux}
+                        jest={zoomLogoJest}
+                    />
+                    <ZoomProject 
+                        zoomImage={zoomImg}
+                    />
+                </div>
+            )
+            : <Welcome />}
+            {carrouselVisible ? (
+                <div className='carrousel_band carrousel_visible'>
+                    <AiOutlineDoubleLeft className='carrousel_arrow' onClick={showCarrousel}/>
+                    <Carrousel
+                        show={carrouselVisible}
+                    >
+                        {datas.map(el => 
+                            <ProjectCard
+                                key={el.id}
+                                card_Img={el.img}
+                                setZoomImage={()=>(
+                                    setZoomImg(el.img), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest)
+                                    )}
+                            />
+                        )}
+                    </Carrousel>
+                </div>
+            )
+            : (  
+                <div className='carrousel_band'>
+                    <AiOutlineDoubleLeft className='carrousel_arrow' onClick={showCarrousel}/>
+                    <Carrousel
+                        show={carrouselVisible}
+                    >
+                        {datas.map(el => 
+                            <ProjectCard 
+                                key={el.id}
+                                card_Img={el.img}
+                                setZoomImage={()=>(setZoomImg(el.img), showCarrousel())}
+                            />
+                        )}
+                    </Carrousel>
+                </div> 
+            )}
         </div>
     )
 }
