@@ -1,0 +1,24 @@
+@import '../../sass/variables';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    font-size: 40px;
+    line-height: 2em;
+
+    > .about_icons {
+        display: flex;
+        margin-top: 20px ;
+        justify-content: center;
+
+        > a, div {
+            text-decoration: none;
+            color: white;
+            margin: 10px 20px;
+            font-size: 60px;
+            cursor: pointer;
+        }
+    }
+}

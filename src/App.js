@@ -3,6 +3,7 @@ import {HashRouter as Router, Routes, Route} from 'react-router-dom'
 import { Home } from './pages/Home/index'
 import { Error } from './pages/Error/index'
 import { Header } from './components/Header/index'
+import { About } from './pages/About/index'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
+          <Route path='/About' element={<About/>}></Route>
           <Route path='/*' element={<Error/>}></Route>
         </Routes>
       </Router>

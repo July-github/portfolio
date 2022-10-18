@@ -12,14 +12,38 @@
 
 @mixin carrousel_show {
     width: 12%;
-    transition: width 1.5s cubic-bezier(.06,.74,1,.52);
-    -webkit-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
-    -moz-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
-    -ms-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
-    -o-transition: width 1.5s cubic-bezier(.06,.74,1,.52);
-    
+    transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -webkit-transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -moz-transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -ms-transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -o-transition: width 1s cubic-bezier(.06,.74,1,.52);
+
     .arrowDown,.arrowUp {
         height: 80px;
-        width: 80px;    
+        width: 80px;
+        transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -webkit-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -moz-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -ms-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -o-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
     }
+}
+
+@mixin carrousel_notShow {
+    width: 2%;
+    transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -webkit-transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -moz-transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -ms-transition: width 1s cubic-bezier(.06,.74,1,.52);
+    -o-transition: width 1s cubic-bezier(.06,.74,1,.52);
+
+    .arrowDown,.arrowUp {
+        height: 15px;
+        width: 15px;
+        transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -webkit-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -moz-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -ms-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+        -o-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
+}
 }

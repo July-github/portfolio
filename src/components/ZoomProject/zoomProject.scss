@@ -1,15 +1,12 @@
-@import '../../sass/variables';
-
 .zoomProject_Wrapper{
     display: flex;
-    width: 100%;
-    height: calc(100% - $header_height);
-    padding-top:$header_height;
+    align-items: flex-start;
+    width: 95%;
     margin: 5px 5px 5px 5px;
-    z-index: 1;
+    overflow-y: scroll;
     
     > img {
         width: 100%;
-        object-fit: fit;
+        object-fit: cover;
     }
 }

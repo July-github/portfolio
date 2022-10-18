@@ -12,6 +12,7 @@ export function Home(){
     const [zoomLogoReact, setZoomLogoReact] = useState(false)
     const [zoomLogoRedux, setZoomLogoRedux] = useState(false)
     const [zoomLogoJest, setZoomLogoJest] = useState(false)
+    const [linkGithub, setLinkGithub] = useState('')
     const [carrouselVisible, setcarrouselVisible] = useState(false)
     const [entrance, setEntrance] = useState(false)
 
@@ -26,14 +27,16 @@ export function Home(){
 
     return(
         !entrance? 
-            <div className='cards'>
+        <div className='cards_wrap'>
             {datas.map(el => 
+            <div className='cards_container'>
                 <ProjectCard
                     key={el.id}
                     card_Img={el.img}
                 />
-            )}
             </div>
+            )}
+        </div>
         :
         <div className='home_wrapper'>
             {zoomImg? (
@@ -42,6 +45,7 @@ export function Home(){
                         react={zoomLogoReact}
                         redux={zoomLogoRedux}
                         jest={zoomLogoJest}
+                        link_Github={linkGithub}
                     />
                     <ZoomProject 
                         zoomImage={zoomImg}
@@ -60,8 +64,8 @@ export function Home(){
                                 key={el.id}
                                 card_Img={el.img}
                                 setZoomImage={()=>(
-                                    setZoomImg(el.img), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest)
-                                    )}
+                                    setZoomImg(el.img), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest), setLinkGithub(el.linkGithub)
+                                )}
                             />
                         )}
                     </Carrousel>

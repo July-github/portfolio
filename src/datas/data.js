@@ -1,5 +1,5 @@
 import ArgentBankHome from '../assets/CardImg/ArgentBankHome.webp'
-import BilledDash from '../assets/CardImg/BilledDash.webp'
+import BilledDash from '../assets/CardImg/BilledConnect.webp'
 import FishEye from '../assets/CardImg/FishEye.webp'
 import HRNetHome from '../assets/CardImg/HRNetHome.webp'
 import Kasa from '../assets/CardImg/KasaHome.webp'
@@ -10,50 +10,64 @@ export const datas = [
     {
         id: 1,
         img: ArgentBankHome,
+        linkGithub: 'https://github.com/July-github/ArgentBank',
         react: true,
         jest: false,
         redux: true,
+        vanillaJS: false,
     },
     {
         id: 2,
-        img: BilledDash,
+        img: FishEye,
+        linkGithub: 'https://github.com/July-github/FishEye',
         react: false,
-        jest: true,
+        jest: false,
         redux: false,
+        vanillaJS: true,
     },
     {
         id: 3,
-        img: FishEye,
-        react: false,
-        jest: false,
-        redux: false,
-    },
-    {
-        id: 4,
         img: HRNetHome,
+        linkGithub: 'https://github.com/July-github/HRNet',
         react: true,
         jest: false,
         redux: true,
+        vanillaJS: false,
+    },
+    {
+        id: 4,
+        img: Kasa,
+        linkGithub: 'https://github.com/July-github/Kasa',
+        react: true,
+        jest: false,
+        redux: false,
+        vanillaJS: false,
     },
     {
         id: 5,
-        img: Kasa,
-        react: true,
-        jest: false,
-        redux: false,
-    },
-    {
-        id: 6,
         img: PetitsPlats,
+        linkGithub: 'https://github.com/July-github/Les-Petits-Plats',
         react: false,
         jest: false,
         redux: false,
+        vanillaJS: true,
     },
     {
-        id: 7,
+        id: 6,
         img: SportSee,
+        linkGithub: 'https://github.com/July-github/SportSee',
         react: true,
         jest: false,
         redux: false,
-    }
+        vanillaJS: false,
+    },
+    {
+        id: 7,
+        img: BilledDash,
+        linkGithub: 'https://github.com/July-github/JulieHeckler_9_04022022',
+        react: false,
+        jest: true,
+        redux: false,
+        vanillaJS: true,
+    },
 ]

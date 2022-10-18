@@ -1,18 +1,34 @@
+@import '../../sass/keyframes';
+
 .logos_wrapper {
     display: flex;
     align-content: center;
-    position: absolute;
-    flex-wrap: wrap;
+    align-items: center;
     height: auto;
-    padding: 15px;
+    padding: 15px 15px;
     width: auto;
-    z-index: 10;
-    top: 0;
-    left: 0;
     background-color: transparent;
+
+    >.logos {
+        flex-wrap: wrap;
     
-    >img {
-        height: 60px;
-        width: auto;
+        >img {
+            height: 60px;
+            width: auto;
+            margin: 5px;
+        }
+    }
+
+    > a {
+        padding-left: 25px;
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    > .icon_linkedin {
+        animation: githubLogo 2s infinite;
+        -webkit-animation: githubLogo 2s infinite;
     }
 }
