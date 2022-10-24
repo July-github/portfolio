@@ -4,6 +4,7 @@
 .carrousel_band {
     display: flex;
     justify-content: space-between;
+    width: 2%;
     @include carrousel_notShow;
     height: 100%;
     position: absolute;
@@ -80,9 +81,31 @@
 }
 
 .carrousel_band.carrousel_visible {
+    width: 15%;
     @include carrousel_show;
 
     > .carrousel_container {
         pointer-events: all;
+    }
+}
+
+@media (max-width: 1400px) {
+    .carrousel_band.carrousel_visible {
+        width: 30%;
+    }
+}
+@media (max-width: 1000px) {
+    .carrousel_band.carrousel_visible {
+        width: 40%;
+    }
+}
+@media (max-width: 800px) {
+    .carrousel_band.carrousel_visible {
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    .carrousel_band.carrousel_visible {
+        width: 80%;
     }
 }

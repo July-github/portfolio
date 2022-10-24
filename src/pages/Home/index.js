@@ -12,9 +12,12 @@ export function Home(){
     const [zoomLogoReact, setZoomLogoReact] = useState(false)
     const [zoomLogoRedux, setZoomLogoRedux] = useState(false)
     const [zoomLogoJest, setZoomLogoJest] = useState(false)
+    const [responsive, setResponsive] = useState(false)
     const [linkGithub, setLinkGithub] = useState('')
     const [carrouselVisible, setcarrouselVisible] = useState(false)
     const [entrance, setEntrance] = useState(false)
+    const [toggleZoomImgResponsive, setToggleZoomImgResponsive] = useState(false)
+    const [responsiveImg, setResponsiveImg] =useState('')
 
     useEffect(()=> {
         const timer = setTimeout(()=> setEntrance(true), 4000)
@@ -25,7 +28,12 @@ export function Home(){
         carrouselVisible ? (setcarrouselVisible(false)) : setcarrouselVisible(true)
     }
 
+    function setZoomImageResponsive(){
+        toggleZoomImgResponsive? setToggleZoomImgResponsive(false) : setToggleZoomImgResponsive(true)
+    }
+
     return(
+        //Entrance : Welcome animation or Home page
         !entrance? 
         <div className='cards_wrap'>
             {datas.map(el => 
@@ -39,21 +47,30 @@ export function Home(){
         </div>
         :
         <div className='home_wrapper'>
-            {zoomImg? (
+            {//zoomImg : Who am I text or zoom on the project picture
+            zoomImg? (
                 <div className='zoom_wrapper'>
                     <Logos                                 
                         react={zoomLogoReact}
                         redux={zoomLogoRedux}
                         jest={zoomLogoJest}
+                        mobile={responsive}
+                        setZoomImageResponsive={setZoomImageResponsive}
                         link_Github={linkGithub}
                     />
-                    <ZoomProject 
-                        zoomImage={zoomImg}
-                    />
+                    {toggleZoomImgResponsive?
+                        <ZoomProject 
+                            zoomImage={responsiveImg}
+                        />
+                        :
+                        <ZoomProject 
+                            zoomImage={zoomImg}
+                        />}
                 </div>
             )
             : <Welcome />}
-            {carrouselVisible ? (
+            { //carrouselVisible : deploy carrousel with projects
+            carrouselVisible ? (
                 <div className='carrousel_band carrousel_visible'>
                     <AiOutlineDoubleLeft className='carrousel_arrow' onClick={showCarrousel}/>
                     <Carrousel
@@ -64,7 +81,7 @@ export function Home(){
                                 key={el.id}
                                 card_Img={el.img}
                                 setZoomImage={()=>(
-                                    setZoomImg(el.img), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest), setLinkGithub(el.linkGithub)
+                                    setZoomImg(el.img), setResponsive(el.responsive), setResponsiveImg(el.responsiveImg), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest), setLinkGithub(el.linkGithub)
                                 )}
                             />
                         )}

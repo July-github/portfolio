@@ -5,6 +5,10 @@ import HRNetHome from '../assets/CardImg/HRNetHome.webp'
 import Kasa from '../assets/CardImg/KasaHome.webp'
 import PetitsPlats from '../assets/CardImg/PetitsPlats.webp'
 import SportSee from '../assets/CardImg/SportSeeDash.webp'
+import ArgentBankResponsive from '../assets/CardImg/ArgentBankResponsive.webp'
+import FishEyeResponsive from '../assets/CardImg/FishEyeResponsive.webp'
+import HRNetResponsive from '../assets/CardImg/HRNetResponsive.webp'
+import KasaResponsive from '../assets/CardImg/KasaResponsive.webp'
 
 export const datas = [
     {
@@ -14,7 +18,8 @@ export const datas = [
         react: true,
         jest: false,
         redux: true,
-        vanillaJS: false,
+        responsive: true,
+        responsiveImg: ArgentBankResponsive,
     },
     {
         id: 2,
@@ -23,7 +28,8 @@ export const datas = [
         react: false,
         jest: false,
         redux: false,
-        vanillaJS: true,
+        responsive: true,
+        responsiveImg: FishEyeResponsive,
     },
     {
         id: 3,
@@ -32,7 +38,8 @@ export const datas = [
         react: true,
         jest: false,
         redux: true,
-        vanillaJS: false,
+        responsive: true,
+        responsiveImg: HRNetResponsive,
     },
     {
         id: 4,
@@ -41,7 +48,8 @@ export const datas = [
         react: true,
         jest: false,
         redux: false,
-        vanillaJS: false,
+        responsive: true,
+        responsiveImg: KasaResponsive,
     },
     {
         id: 5,
@@ -50,7 +58,8 @@ export const datas = [
         react: false,
         jest: false,
         redux: false,
-        vanillaJS: true,
+        responsive: false,
+        responsiveImg: '',
     },
     {
         id: 6,
@@ -59,7 +68,8 @@ export const datas = [
         react: true,
         jest: false,
         redux: false,
-        vanillaJS: false,
+        responsive: false,
+        responsiveImg: '',
     },
     {
         id: 7,
@@ -68,6 +78,7 @@ export const datas = [
         react: false,
         jest: true,
         redux: false,
-        vanillaJS: true,
+        responsive: false,
+        responsiveImg: '',
     },
 ]

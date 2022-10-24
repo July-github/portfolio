@@ -13,6 +13,25 @@
     margin: auto;
 }
 
+@media (max-width: 1400px) {
+    .welcome_container {
+        flex-direction: column;
+        justify-content: center;
+
+        > img {
+            margin: 0;
+        }
+    }
+    .welcome_wrapper {
+        margin: 0;
+        align-items: center;
+
+        > h1, a {
+            text-align: center;
+        }
+    }
+}
+
 .welcome, .Iam, .welcome_profile > a {
     text-decoration: none;
     font-size: 40px;
@@ -35,4 +54,29 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+@media (max-width: 800px) {
+    .welcome_container > img {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 600px) {
+    .welcome_container > img {
+        width: 200px;
+        height: 200px;
+    }
+    .welcome_wrapper > h1, .welcome_wrapper  a {
+        font-size: 35px;
+    }
+}
+@media (max-width: 400px) {
+    .welcome_container > img {
+        width: 150px;
+        height: 150px;
+    }
+    .welcome_wrapper > h1, .welcome_wrapper  a {
+        font-size: 30px;
+    }
 }

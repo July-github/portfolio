@@ -10,12 +10,20 @@
     background-color: transparent;
 
     >.logos {
-        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
     
         >img {
             height: 60px;
             width: auto;
             margin: 5px;
+        }
+        > .mobile_logo svg {
+            height: 100px;
+            width: 50px;
+            color: white;
+            margin: 0 10px;
+            cursor: pointer;
         }
     }
 

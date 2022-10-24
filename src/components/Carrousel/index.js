@@ -12,7 +12,7 @@ export function Carrousel({children}){
     }, [children])
 
     function down(){
-        if(currentIndex < (length - 3)) {
+        if(currentIndex < (length - 1)) {
             setCurrentIndex(prev => prev + 1)
         }
         console.log(currentIndex)
