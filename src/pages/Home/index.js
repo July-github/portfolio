@@ -17,7 +17,7 @@ export function Home(){
     const [carrouselVisible, setcarrouselVisible] = useState(false)
     const [entrance, setEntrance] = useState(false)
     const [toggleZoomImgResponsive, setToggleZoomImgResponsive] = useState(false)
-    const [responsiveImg, setResponsiveImg] =useState('')
+    const [responsiveImg, setResponsiveImg] = useState('')
 
     useEffect(()=> {
         const timer = setTimeout(()=> setEntrance(true), 4000)
@@ -31,15 +31,16 @@ export function Home(){
     function setZoomImageResponsive(){
         toggleZoomImgResponsive? setToggleZoomImgResponsive(false) : setToggleZoomImgResponsive(true)
     }
+//Entrance : Welcome animation or Home page
+//zoomImg : 'Who am I' text or zoom on the project picture
+//carrouselVisible : deploy carrousel with projects
 
     return(
-        //Entrance : Welcome animation or Home page
         !entrance? 
         <div className='cards_wrap'>
             {datas.map(el => 
-            <div className='cards_container'>
+            <div className='cards_container' key={el.id}>
                 <ProjectCard
-                    key={el.id}
                     card_Img={el.img}
                 />
             </div>
@@ -47,7 +48,7 @@ export function Home(){
         </div>
         :
         <div className='home_wrapper'>
-            {//zoomImg : Who am I text or zoom on the project picture
+            {
             zoomImg? (
                 <div className='zoom_wrapper'>
                     <Logos                                 
@@ -69,7 +70,7 @@ export function Home(){
                 </div>
             )
             : <Welcome />}
-            { //carrouselVisible : deploy carrousel with projects
+            { 
             carrouselVisible ? (
                 <div className='carrousel_band carrousel_visible'>
                     <AiOutlineDoubleLeft className='carrousel_arrow' onClick={showCarrousel}/>
