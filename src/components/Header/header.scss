@@ -7,12 +7,10 @@
     position: fixed;
     z-index: 15;
     cursor: pointer;
-    // color: white;
     font-size: 30px;
 
     > a {
         text-decoration: none;
-        // color: white;
         font-size: 30px;
     }
     
@@ -30,12 +28,17 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 5%;
+    left: 3%;
     top: 30%;
 }
-.theme_button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: pink;
+
+@media (max-width: 600px) {
+    .header_Wrapper > a {
+        font-size: 25px;
+    }
+}
+@media (max-width: 450px) {
+    .themeButton_container {
+        top: 100%;
+    }
 }

@@ -38,3 +38,22 @@
         -webkit-animation: githubLogo 2s infinite;
     }
 }
+
+@media (max-width: 1000px) {
+    .logos_wrapper > .mobile_logo svg {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 800px) {
+    .logos_wrapper > .mobile_logo svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 600px) {
+    .logos_wrapper > .mobile_logo svg {
+    width: 35px;
+    height: 35px;
+    }
+}
