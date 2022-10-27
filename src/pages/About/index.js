@@ -7,6 +7,7 @@ export function About(){
         <div className="about">
             Développeuse Front-End, 
             <br/>je suis spécialisée React.
+            <div className="back_image"></div>
             <div className="about_icons">
                 <div onClick={()=> window.location = 'mailto:july.heckler@gmail.com'}><AiFillMail className="icon_mail"/></div>
                 <Link href='https://www.linkedin.com/in/julyheckler/'><AiFillLinkedin className="icon_linkedin"/></Link>

@@ -4,13 +4,13 @@
 .carrousel_band {
     display: flex;
     justify-content: space-between;
-    width: 2%;
+    width: 0%;
     @include carrousel_notShow;
     height: 100%;
     position: absolute;
     right: 0;
     z-index: 20;
-    top: 80px;
+    top: 0;
 
     .carrousel_container {
         display: flex;
@@ -103,9 +103,6 @@
     }
 }
 @media (max-width: 1000px) {
-    .carrousel_band {
-        width: 3%;
-    }   
     .carrousel_band.carrousel_visible {
         width: 40%;
     }
@@ -116,9 +113,6 @@
     }
 }
 @media (max-width: 600px) {
-    .carrousel_band {
-        width: 4%;
-    }   
     .carrousel_band.carrousel_visible {
         width: 80%;
     }

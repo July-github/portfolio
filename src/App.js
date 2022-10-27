@@ -4,11 +4,14 @@ import { Home } from './pages/Home/index'
 import { Error } from './pages/Error/index'
 import { Header } from './components/Header/index'
 import { About } from './pages/About/index'
+import { GlobalStyle } from './components/GlobalStyle/index';
 
 function App() {
+
   return (
     <div className="App">
       <Router baseline='/'>
+      <GlobalStyle/>
       <Header/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>

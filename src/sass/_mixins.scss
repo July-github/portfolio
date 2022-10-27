@@ -43,12 +43,5 @@
         -moz-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
         -ms-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
         -o-transition: width 1s cubic-bezier(.06,.74,1,.52), height 1s cubic-bezier(.06,.74,1,.52);
-}
-}
-
-@mixin text_background {
-    background-image: linear-gradient( 135deg, #00E4FF 10%, #69FF97 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    }
 }

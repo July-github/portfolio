@@ -1,0 +1,21 @@
+.icon__home {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #a1febd;
+    box-shadow: inset .3rem .3rem .3rem #20873f, inset -.3rem -.3rem .6rem #b5ffcb, inset -.2rem -.2rem 2rem #2ead54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .5s ease;
+
+    &:active {
+        background: #2cff6b;
+        box-shadow: inset .3rem .3rem .5rem #d4fce0, inset .4rem .4rem .2rem #82f1a3, inset -.4rem -.4rem 4rem #82f1a3, inset -.3rem -.3rem .1rem #18652f;
+    }
+    > svg {
+        color: black;
+    }
+}
