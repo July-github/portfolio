@@ -32,11 +32,6 @@
             align-items: center;  
             position: relative;
             height: 100%;
-
-            > svg {
-                stroke: black;
-                stroke-width: 10px;
-            }
         }
         
         & .arrowUp, .arrowDown {
@@ -76,6 +71,9 @@
                 -ms-transform: translateY(5%);
                 -o-transform: translateY(5%);
             }
+        }
+        .carrousel_content {
+            overflow-y: scroll;
         }
     }
 }
