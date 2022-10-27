@@ -9,6 +9,7 @@ import ArgentBankResponsive from '../assets/CardImg/ArgentBankResponsive.webp'
 import FishEyeResponsive from '../assets/CardImg/FishEyeResponsive.webp'
 import HRNetResponsive from '../assets/CardImg/HRNetResponsive.webp'
 import KasaResponsive from '../assets/CardImg/KasaResponsive.webp'
+import PetitsPlatsResponsive from '../assets/CardImg/LesPetitsPlatsResponsive.webp'
 
 export const datas = [
     {
@@ -20,6 +21,7 @@ export const datas = [
         redux: true,
         responsive: true,
         responsiveImg: ArgentBankResponsive,
+        text: "Le projet concerne une nouvelle banque, Argent Bank, qui veut mettre en place son application. Phase 1 : Authentification des utilisateurs - Création d'une application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil. Phase 2 : Transactions - Il s’agit de spécifier les endpoints d’API nécessaires pour une éventuelle deuxième mission une fois que nous aurons terminé la première."
     },
     {
         id: 2202,
@@ -30,6 +32,7 @@ export const datas = [
         redux: false,
         responsive: true,
         responsiveImg: FishEyeResponsive,
+        text: "Site accessible de photographes indépendants"
     },
     {
         id: 2203,
@@ -40,6 +43,7 @@ export const datas = [
         redux: true,
         responsive: true,
         responsiveImg: HRNetResponsive,
+        text: "Passez une application web interne, appelée HRnet, gérant les dossiers des employés, qui utilise une bibliothèque jQuery à React."
     },
     {
         id: 2204,
@@ -50,6 +54,7 @@ export const datas = [
         redux: false,
         responsive: true,
         responsiveImg: KasaResponsive,
+        text: "Démarrage du projet React et développement de l'ensemble de l'application, des composants React, des routes React Router, en suivant les modèles Figma."
     },
     {
         id: 2205,
@@ -58,8 +63,9 @@ export const datas = [
         react: false,
         jest: false,
         redux: false,
-        responsive: false,
-        responsiveImg: '',
+        responsive: true,
+        responsiveImg: PetitsPlatsResponsive,
+        text: "Après avoir édité des livres de cuisine pendant plusieurs années, l’entreprise a décidé de se lancer dans un nouveau projet: réaliser son propre site de recettes de cuisine à l’instar de Marmiton ou 750g. Objectif : Implémenter la fonctionnalité de recherche."
     },
     {
         id: 2206,
@@ -70,6 +76,7 @@ export const datas = [
         redux: false,
         responsive: false,
         responsiveImg: '',
+        text: "Startup dédiée au coaching sportif. Travail sur une nouvelle version de la page de profil utilisateur avec le tableau de bord d'analyse sportive."
     },
     {
         id: 2207,
@@ -80,5 +87,6 @@ export const datas = [
         redux: false,
         responsive: false,
         responsiveImg: '',
+        text: "Tester et debugger une application Saas à l'aide de Chrome Debugger & Jest"
     },
 ]

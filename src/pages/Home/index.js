@@ -18,9 +18,10 @@ export function Home(){
     const [entrance, setEntrance] = useState(false)
     const [toggleZoomImgResponsive, setToggleZoomImgResponsive] = useState(false)
     const [responsiveImg, setResponsiveImg] = useState('')
+    const [textContent, setTextContent] = useState('')
 
     useEffect(()=> {
-        const timer = setTimeout(()=> setEntrance(true), 4000)
+        const timer = setTimeout(()=> setEntrance(true), 5000)
         return ()=> (clearTimeout(timer))
     }, [])
 
@@ -37,14 +38,16 @@ export function Home(){
 
     return(
         !entrance? 
-        <div className='cards_wrap'>
-            {datas.map(el => 
-            <div className='cards_container' key={el.id}>
-                <ProjectCard
-                    card_Img={el.img}
-                />
+        <div className='home_wrapper'>
+            <div className='cards_wrap'>
+                {datas.map(el => 
+                <div className='cards_container' key={el.id}>
+                    <ProjectCard
+                        card_Img={el.img}
+                    />
+                </div>
+                )}
             </div>
-            )}
         </div>
         :
         <div className='home_wrapper'>
@@ -52,20 +55,28 @@ export function Home(){
             zoomImg? (
                 <div className='zoom_wrapper'>
                     <Logos                                 
-                        react={zoomLogoReact}
-                        redux={zoomLogoRedux}
-                        jest={zoomLogoJest}
                         mobile={responsive}
                         setZoomImageResponsive={setZoomImageResponsive}
-                        link_Github={linkGithub}
                     />
                     {toggleZoomImgResponsive?
                         <ZoomProject 
+                            zoomImg_name='responsive_zoom'
                             zoomImage={responsiveImg}
+                            react={zoomLogoReact}
+                            redux={zoomLogoRedux}
+                            jest={zoomLogoJest}
+                            link_Github={linkGithub}
+                            text={textContent}
                         />
                         :
                         <ZoomProject 
+                            zoomImg_name=''
                             zoomImage={zoomImg}
+                            react={zoomLogoReact}
+                            redux={zoomLogoRedux}
+                            jest={zoomLogoJest}
+                            link_Github={linkGithub}  
+                            text={textContent}
                         />}
                 </div>
             )
@@ -82,7 +93,7 @@ export function Home(){
                                 key={el.id}
                                 card_Img={el.img}
                                 setZoomImage={()=>(
-                                    setZoomImg(el.img), setResponsive(el.responsive), setResponsiveImg(el.responsiveImg), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest), setLinkGithub(el.linkGithub)
+                                    setZoomImg(el.img), setTextContent(el.text), setToggleZoomImgResponsive(false), setResponsive(el.responsive), setResponsiveImg(el.responsiveImg), showCarrousel(), setZoomLogoReact(el.react), setZoomLogoRedux(el.redux), setZoomLogoJest(el.jest), setLinkGithub(el.linkGithub)
                                 )}
                             />
                         )}

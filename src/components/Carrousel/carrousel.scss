@@ -10,7 +10,7 @@
     position: absolute;
     right: 0;
     z-index: 20;
-    top: 0;
+    top: 80px;
 
     .carrousel_container {
         display: flex;
@@ -47,7 +47,7 @@
             background-color: rgba(253, 231, 159, 0.5);
             position: absolute;
             z-index: 1;
-            right: 28%;
+            right: 20%;
             cursor: pointer;
             border-radius: 50%;
             -webkit-border-radius: 50%;
@@ -81,20 +81,31 @@
 }
 
 .carrousel_band.carrousel_visible {
-    width: 15%;
+    width: 20%;
     @include carrousel_show;
 
-    > .carrousel_container {
+    .carrousel_container {
         pointer-events: all;
+
+        .arrowUp, .arrowDown {
+            right: 35%;
+        }
     }
 }
 
 @media (max-width: 1400px) {
     .carrousel_band.carrousel_visible {
         width: 30%;
+
+        .carrousel_container .arrowUp, .carrousel_container .arrowDown {
+            right: 40%;
+        }
     }
 }
 @media (max-width: 1000px) {
+    .carrousel_band {
+        width: 3%;
+    }   
     .carrousel_band.carrousel_visible {
         width: 40%;
     }
@@ -105,6 +116,9 @@
     }
 }
 @media (max-width: 600px) {
+    .carrousel_band {
+        width: 4%;
+    }   
     .carrousel_band.carrousel_visible {
         width: 80%;
     }

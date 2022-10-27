@@ -8,12 +8,12 @@
 @import '../../components/Logos/logos.scss';
 
 .home_wrapper{
-    display: flex;
     padding: 0px 10px;
-    height: calc(100% - $header_height);
-    overflow-y: hidden;
+    height: 100%;
+    overflow: hidden;
     width: 100%;
     margin-top: 80px;
+    padding-top: 80px;
     box-sizing: border-box;
 }
 
@@ -23,6 +23,9 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding-top: 5%;
 }
 
 .carrousel_arrow {
@@ -47,30 +50,63 @@
     display: flex;
     justify-content: center;
     margin-top: 20%;
-    width: 145%;
+    width: 180%;
     overflow-x: hidden;
-    height: 100%;
-    animation: carrousel_entrance 10s ease-in-out;
-    -webkit-animation: carrousel_entrance 10s ease-in-out;
+    height: 40%;
+    animation: carrousel_entrance 6s ease-in;
+    -webkit-animation: carrousel_entrance 6s ease-in;
 
     >.cards_container {
         display: flex;
+        position: relative;
         height: 100%;
-        width: 400px;
+        width: 100%;
         overflow: hidden;
         justify-content: right;
         border: solid black 25px;
         box-sizing: border-box;
-        animation: carrousel_entrance 9s ease-in-out;
-        -webkit-animation: carrousel_entrance 9s ease-in-out;
+        
+        >.projectCard_Wrapper {
+            height: auto;
+            
+            >.projectCard_Opacity {
+                align-items: center;
 
-        >.projectCard_Wrapper >.projectCard_Opacity>img {
-            height: 400px;
-            width: 600px;
-            filter: grayscale(0%);
-            -webkit-filter: grayscale(0%);
-            animation: cards_entrance 9s ease-in-out;
-            -webkit-animation: cards_entrance 9s ease-in-out;
+                >img {
+                    height: 400px;
+                    width: 600px;
+                    filter: grayscale(0%);
+                    -webkit-filter: grayscale(0%);
+                    animation: cards_entrance 16s ease-in-out;
+                    -webkit-animation: cards_entrance 16s ease-in-out;
+                }
+            }
         }
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards_wrap {
+        width: 250%;
+    }
+}
+@media (max-width: 1000px) {
+    .cards_wrap {
+        width: 350%;
+    }
+}
+@media (max-width: 800px) {
+    .cards_wrap {
+        width: 400%;
+    }
+}
+@media (max-width: 600px) {
+    .cards_wrap {
+        width: 500%;
+    }
+}
+@media (max-width: 400px) {
+    .cards_wrap {
+        width: 500%;
     }
 }

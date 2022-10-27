@@ -2,36 +2,34 @@
 
 .logos_wrapper {
     display: flex;
+    position: absolute;
+    z-index: 20;
     align-content: center;
     align-items: center;
-    height: auto;
     padding: 15px 15px;
     width: auto;
     background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: -1px -1px 20px #1c1b1b;
+    top: 5%;
+    left: 3%;
 
-    >.logos {
-        display: flex;
-        align-items: center;
-    
-        >img {
-            height: 60px;
-            width: auto;
-            margin: 5px;
-        }
-        > .mobile_logo svg {
-            height: 100px;
-            width: 50px;
-            color: white;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-    }
+    >.mobile_logo svg {
+        height: 60px;
+        width: 60px;
+        color: #69ff97;
+        cursor: pointer;
+    } 
 
     > a {
         padding-left: 25px;
         color: white;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 25px;
         cursor: pointer;
     }
 
