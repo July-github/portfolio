@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.180d8b36.css",
+    "main.js": "/portfolio/static/js/main.1a2a1706.js",
+    "static/media/DSCF3361.webp": "/portfolio/static/media/DSCF3361.0e711638ea010f1393a1.webp",
+    "static/media/Profile.jpg": "/portfolio/static/media/Profile.dcf49bfe2a9f2684697a.jpg",
+    "static/media/HRNetHome.webp": "/portfolio/static/media/HRNetHome.324d97c986e9d1aded4d.webp",
+    "static/media/ArgentBankHome.webp": "/portfolio/static/media/ArgentBankHome.e1a8e0d263ae4b31f88f.webp",
+    "static/media/reactLogo.webp": "/portfolio/static/media/reactLogo.9f9f362e7b7e61581585.webp",
+    "static/media/KasaHome.webp": "/portfolio/static/media/KasaHome.214dfaff72911956db9a.webp",
+    "static/media/reduxLogo.webp": "/portfolio/static/media/reduxLogo.8911a7a501aa959ce834.webp",
+    "static/media/PetitsPlats.webp": "/portfolio/static/media/PetitsPlats.d9058d3b5e3238bbbe09.webp",
+    "static/media/SportSeeDash.webp": "/portfolio/static/media/SportSeeDash.9dd56cc6ff33d632fcc5.webp",
+    "static/media/FishEye.webp": "/portfolio/static/media/FishEye.62eed2c1dbc0483ea1a3.webp",
+    "static/media/jestLogo.webp": "/portfolio/static/media/jestLogo.bd284bfe9cf9a51c8bff.webp",
+    "static/media/GitHubLogo.jpg": "/portfolio/static/media/GitHubLogo.2444c54fd88ae684e5a7.jpg",
+    "static/media/FishEyeResponsive.webp": "/portfolio/static/media/FishEyeResponsive.b732fc41d949c46b6fe7.webp",
+    "static/media/KasaResponsive.webp": "/portfolio/static/media/KasaResponsive.440b1b0ae3a77d09925e.webp",
+    "static/media/ArgentBankResponsive.webp": "/portfolio/static/media/ArgentBankResponsive.6d0d6ad7fb92e175b4f7.webp",
+    "static/media/BilledConnect.webp": "/portfolio/static/media/BilledConnect.f31d4b44b3763d6335d0.webp",
+    "static/media/LesPetitsPlatsResponsive.webp": "/portfolio/static/media/LesPetitsPlatsResponsive.a5cff4881ed3aae7faf6.webp",
+    "static/media/HRNetResponsive.webp": "/portfolio/static/media/HRNetResponsive.df5bcbe308b4256f663c.webp",
+    "index.html": "/portfolio/index.html",
+    "main.180d8b36.css.map": "/portfolio/static/css/main.180d8b36.css.map",
+    "main.1a2a1706.js.map": "/portfolio/static/js/main.1a2a1706.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.180d8b36.css",
+    "static/js/main.1a2a1706.js"
+  ]
+}
