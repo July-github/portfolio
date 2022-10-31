@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <Router baseline='/'>
-      <GlobalStyle/>
-      <Header/>
+        <GlobalStyle/>
+        <Header/>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/About' element={<About/>}></Route>
