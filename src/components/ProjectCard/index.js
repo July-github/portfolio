@@ -2,12 +2,6 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 export function ProjectCard({card_Img, setZoomImage}){
-    // const [toZoom, setToZoom] = useState(false)
-
-    // function transformToZoom(){
-        // setToZoom(true)
-    //     setZoomImage()
-    // }
 
     return(
         <div className='projectCard_Wrapper'>

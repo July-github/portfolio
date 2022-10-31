@@ -94,6 +94,10 @@
     .cards_wrap {
         width: 400%;
     }
+    .carrousel_arrow {
+        width: 40px;
+        height: 40px;
+    }
 }
 @media (max-width: 600px) {
     .cards_wrap {
@@ -103,5 +107,8 @@
 @media (max-width: 400px) {
     .cards_wrap {
         width: 500%;
+    }
+    .carrousel_arrow {
+        left: -40px;
     }
 }

@@ -1,5 +1,4 @@
 import { MdMobileFriendly } from 'react-icons/md'
-
 import PropTypes from 'prop-types'
 
 export function Logos({mobile, setZoomImageResponsive}){
@@ -12,10 +11,6 @@ export function Logos({mobile, setZoomImageResponsive}){
 }
 
 Logos.propTypes = {
-    react: PropTypes.bool,
-    redux: PropTypes.bool,
-    jest: PropTypes.bool,
     mobile: PropTypes.bool,
     setZoomImageResponsive: PropTypes.func,
-    link_Github: PropTypes.string.isRequired
 }

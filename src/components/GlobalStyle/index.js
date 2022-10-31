@@ -9,11 +9,11 @@ const StyledGlobalStyle = createGlobalStyle`
     }
     body {
         background-color: ${({ isDarkMode }) =>
-          isDarkMode ? 'black' : 'white'};
+          isDarkMode ? '#2d2d2d' : '#f9f9f9'};
     }
     .cards_wrap > .cards_container {
         border: ${({ isDarkMode }) =>
-          isDarkMode ? 'black' : 'white'} solid 25px;
+          isDarkMode ? '#2d2d2d' : '#f9f9f9'} solid 25px;
     }
 `
 

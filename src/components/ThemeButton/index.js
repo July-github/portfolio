@@ -8,7 +8,7 @@ export function ThemeButton(){
     const { toggleTheme, theme } = useContext(ThemeContext)
 
     return (
-        <div class="icon__home"  onClick={() => toggleTheme()}>
+        <div className="icon__home"  onClick={() => toggleTheme()}>
             {(theme === 'dark') ? <RiMoonFill/> : <BiSun/>}
         </div>
     )

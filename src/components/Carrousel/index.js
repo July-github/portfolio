@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './carrousel.scss';
 import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
+import PropTypes from 'prop-types'
 
 export function Carrousel({children}){
     const [length, setLength] = useState(children.length)
@@ -39,4 +40,8 @@ export function Carrousel({children}){
             </div>
         </div>
     )
+}
+
+Carrousel.propTypes = {
+    children: PropTypes.any,
 }

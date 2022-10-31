@@ -1,10 +1,11 @@
+@import '../../sass/variables';
+
 .error_wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    // color: white;
     height: 100vh;
     background-image: url('../../assets/DSCF3361.webp');
     background-size: cover;
@@ -12,12 +13,11 @@
 }
 
 .error_backToProjects{
-    margin-top: 80px;
+    margin-top: $header_height;
 }
 
 .error_backToProjects > a{
     text-decoration: none;
-    // color: white;
     font-size: 40px;
 }
 
@@ -27,6 +27,5 @@
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    // color: white;
     height: 100vh;
 }
