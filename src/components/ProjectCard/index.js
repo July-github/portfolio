@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react'
 
 export function ProjectCard({card_Img, setZoomImage}){
 

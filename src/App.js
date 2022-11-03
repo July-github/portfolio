@@ -4,6 +4,7 @@ import { Home } from './pages/Home/index'
 import { Error } from './pages/Error/index'
 import { Header } from './components/Header/index'
 import { About } from './pages/About/index'
+import { Projets } from './pages/Projets/index'
 import { GlobalStyle } from './components/GlobalStyle/index';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
         <GlobalStyle/>
         <Header/>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          {/* <Route path='/' element={<Home/>}></Route> */}
           <Route path='/About' element={<About/>}></Route>
+          <Route path='/' element={<Projets/>}></Route>
           <Route path='/*' element={<Error/>}></Route>
         </Routes>
       </Router>

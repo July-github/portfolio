@@ -8,7 +8,7 @@ import { AiOutlineDoubleLeft } from "react-icons/ai";
 import { Logos } from '../../components/Logos'
 
 export function Home(){
-    const [zoomImg, setZoomImg] = useState('')
+    const [zoomImg, setZoomImg] = useState('') 
     const [zoomLogoReact, setZoomLogoReact] = useState(false)
     const [zoomLogoRedux, setZoomLogoRedux] = useState(false)
     const [zoomLogoJest, setZoomLogoJest] = useState(false)

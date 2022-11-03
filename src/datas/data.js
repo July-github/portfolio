@@ -43,7 +43,7 @@ export const datas = [
         redux: true,
         responsive: true,
         responsiveImg: HRNetResponsive,
-        text: "Passez une application web interne, appelée HRnet, gérant les dossiers des employés, qui utilise une bibliothèque jQuery à React."
+        text: "Passer une application web interne, appelée HRnet, gérant les dossiers des employés, qui utilise une bibliothèque jQuery à React."
     },
     {
         id: 2204,
