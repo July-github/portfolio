@@ -13,6 +13,16 @@ export function Error(){
         isLoading ? <div className="loading">Loading...</div>
         : (
         <div className="error_wrapper">
+            <div class="stage">
+                <div class="cubespinner">
+                    <div class="face1">4</div>
+                    <div class="face2">0</div>
+                    <div class="face3">4</div>
+                    <div class="face4">4</div>
+                    <div class="face5">0</div>
+                    <div class="face6">4</div>
+                </div>
+            </div>
             <p>The page you're looking for doesn't exist</p>
             <div className="error_backToProjects"><Link to="/">Retour vers PROJETS</Link></div>
             {/* <div><Link to="/">Retour vers 'À Propos'</Link></div> */}
