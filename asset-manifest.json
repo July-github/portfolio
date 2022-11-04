@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.180d8b36.css",
-    "main.js": "/portfolio/static/js/main.1a2a1706.js",
-    "static/media/DSCF3361.webp": "/portfolio/static/media/DSCF3361.0e711638ea010f1393a1.webp",
+    "main.css": "/portfolio/static/css/main.74893b14.css",
+    "main.js": "/portfolio/static/js/main.93ec52d3.js",
+    "static/media/DSCF5614.jpg": "/portfolio/static/media/DSCF5614.c1eb0b0f138067cb71df.jpg",
     "static/media/Profile.jpg": "/portfolio/static/media/Profile.dcf49bfe2a9f2684697a.jpg",
     "static/media/HRNetHome.webp": "/portfolio/static/media/HRNetHome.324d97c986e9d1aded4d.webp",
     "static/media/ArgentBankHome.webp": "/portfolio/static/media/ArgentBankHome.e1a8e0d263ae4b31f88f.webp",
@@ -21,11 +21,11 @@
     "static/media/LesPetitsPlatsResponsive.webp": "/portfolio/static/media/LesPetitsPlatsResponsive.a5cff4881ed3aae7faf6.webp",
     "static/media/HRNetResponsive.webp": "/portfolio/static/media/HRNetResponsive.df5bcbe308b4256f663c.webp",
     "index.html": "/portfolio/index.html",
-    "main.180d8b36.css.map": "/portfolio/static/css/main.180d8b36.css.map",
-    "main.1a2a1706.js.map": "/portfolio/static/js/main.1a2a1706.js.map"
+    "main.74893b14.css.map": "/portfolio/static/css/main.74893b14.css.map",
+    "main.93ec52d3.js.map": "/portfolio/static/js/main.93ec52d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.180d8b36.css",
-    "static/js/main.1a2a1706.js"
+    "static/css/main.74893b14.css",
+    "static/js/main.93ec52d3.js"
   ]
 }
