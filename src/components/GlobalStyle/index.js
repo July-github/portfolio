@@ -26,7 +26,9 @@ const StyledGlobalStyle = createGlobalStyle`
     }
     .cubespinner > div {
         color: ${({ isDarkMode }) =>
-            isDarkMode ? '#2d2d2dcc' : '#2d2d2dcc'};
+            isDarkMode ? '#ffffff' : '#000000'};
+        background: ${({ isDarkMode }) =>
+            isDarkMode ? '#000000' : '#ffffff'};  
     }
 `
 

@@ -53,9 +53,9 @@
     flex-direction: column;
     text-align: justify;
     align-items: flex-start;
-    margin: 0 20px;
+    margin: 0 0 0 20px;
     padding: 10px;
-    width: 30%;
+    width: 35%;
     line-height: 1.5;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -75,4 +75,29 @@
         background-size: cover;
         box-shadow: inset 2px 2px 30px #ffffff, inset -10px -10px 30px #191818;
     }
+}
+
+@media (max-width: 900px) {
+    .project, .project:nth-child(odd) {
+        flex-direction: column-reverse;
+
+        > .projects_text {
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        > .parallax_container {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .project {
+        padding: 0;
+    }
+}
+
+.cards_wrap {
+    margin-top: 30%;
+    height: 50%;
 }

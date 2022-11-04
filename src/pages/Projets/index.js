@@ -9,11 +9,17 @@ import { ProjectCard } from '../../components/ProjectCard'
 
 export function Projets(){
     const [entrance, setEntrance] = useState(false)
-
+    const [windowWidth, setWindowWidth] = useState(1600)
+    
     useEffect(()=> {
+        setWindowWidth(window.innerWidth)
         const timer = setTimeout(()=> setEntrance(true), 5000)
         return ()=> (clearTimeout(timer))
     }, [])
+
+    window.addEventListener('resize', e => {setWindowWidth(window.innerWidth)})
+
+    datas.map(el => !el.responsiveImg ? el.img : el.responsiveImg)
 
     return (
         !entrance? 
@@ -42,9 +48,14 @@ export function Projets(){
                         {el.text}
                     </div>
                     <div className="parallax_container">
-                        <div className='layer_1'></div>
-                        {/* <img className='background_image' src={el.img} alt='image_project' /> */}
-                        <div className='background_image' style={{backgroundImage: `url(${el.img})`}}></div>
+                        {(windowWidth < 800)? 
+                            `${el.responsiveImg}`? 
+                                <div className='background_image' style={{backgroundImage: `url(${el.responsiveImg})`}}></div>
+                                :
+                                <div className='background_image' style={{backgroundImage: `url(${el.img})`}}></div>
+                            :
+                                <div className='background_image' style={{backgroundImage: `url(${el.img})`}}></div>
+                            }
                     </div>  
                 </div>
             )}

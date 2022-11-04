@@ -23,9 +23,8 @@ export function Error(){
                     <div class="face6">4</div>
                 </div>
             </div>
-            <p>The page you're looking for doesn't exist</p>
-            <div className="error_backToProjects"><Link to="/">Retour vers PROJETS</Link></div>
-            {/* <div><Link to="/">Retour vers 'À Propos'</Link></div> */}
+            <p>Ooops !<br/>Cette page n'existe pas<br/>The page you're looking for doesn't exist</p>
+            {/* <div className="error_backToProjects"><Link to="/">Retour vers PROJETS</Link> / <Link to="/About">À PROPOS</Link></div> */}
         </div>
         )
     )
