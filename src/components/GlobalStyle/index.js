@@ -18,10 +18,6 @@ const StyledGlobalStyle = createGlobalStyle`
     .projects_logos > a, .projects_logos > img {
         box-shadow: 2px 2px 10px #f9f9f970, inset -10px -10px 30px #64646461;
     }
-    .background_image {
-        box-shadow: ${({ isDarkMode }) =>
-        isDarkMode ? 'inset 2px 2px 10px #cacaca70, inset -10px -10px 30px #191818' : 'inset 2px 2px 10px #cacaca70, inset -10px -10px 30px #18181861, 2px 2px 10px #2f2f2f'};
-    }
     .header_Wrapper {
         background-color: ${({ isDarkMode }) =>
           isDarkMode ? '#2d2d2d99' : '#ffffffab'};

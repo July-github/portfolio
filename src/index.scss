@@ -1,8 +1,9 @@
 @import './sass/variables';
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Nunito+Sans:wght@200;400;600;700;800;900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Lucida Console', 'Monaco', 'monospace', 'Helvetica Neue', sans-serif;
+  font-family: 'Nunito Sans', 'Lucida Console', 'Monaco', 'monospace', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

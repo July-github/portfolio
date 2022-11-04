@@ -1,23 +1,46 @@
 @import '../../sass/variables';
 @import '../../sass/keyframes';
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 .about {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 20%; 
     font-size: 40px;
     line-height: 2em;
 
     > .about_icons {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
 
         > a, div {
             text-decoration: none;
             margin: 10px 20px;
             font-size: 60px;
             cursor: pointer;
+        }
+    }
+
+    > .about_me {
+        background-image: url('../../assets/DSCF5614.jpg');
+        background-attachment: fixed;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-position: center;
+        background-size: contain;
+        background-blend-mode: difference;
+        color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: auto;
+
+        & > p {
+            font-size: 200px;
+            margin: 40px 0 0 0;
+            padding-bottom: 60px;
+            font-family: 'Concert One', cursive;
         }
     }
 }
