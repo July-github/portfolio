@@ -2,8 +2,9 @@
 
 .projectCard_Wrapper {
     display: flex;
-    height: 200px;
+    height: 100%;
     margin: auto 0;
+    align-content: center;
 
     > .projectCard_Opacity {
         display: flex;
@@ -13,7 +14,7 @@
 
         > img {
             object-fit: cover;
-            height: 100%;
+            height: 200px;
             width: 100%;
             border-radius: 10px;
             -webkit-border-radius: 10px;

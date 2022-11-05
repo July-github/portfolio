@@ -21,7 +21,7 @@ export const datas = [
         redux: true,
         responsive: true,
         responsiveImg: ArgentBankResponsive,
-        text: "Le projet concerne une nouvelle banque, Argent Bank, qui veut mettre en place son application. Phase 1 : Authentification des utilisateurs - Création d'une application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil. Phase 2 : Transactions - Il s’agit de spécifier les endpoints d’API nécessaires pour une éventuelle deuxième mission une fois que nous aurons terminé la première."
+        text: "Le projet concerne une nouvelle banque, Argent Bank, qui veut mettre en place son application. Phase 1 : Authentification des utilisateurs. Phase 2 : Transactions - Spécifier les endpoints d’API nécessaires."
     },
     {
         id: 2202,

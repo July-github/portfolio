@@ -45,7 +45,7 @@ export function Projets(){
                             {el.redux && <img src={reduxLogo} alt='logo Redux'/>}
                             {el.jest && <img src={jestLogo} alt='logo Jest'/>}
                         </div>
-                        {el.text}
+                        <div className='project_infos'>{el.text}</div>
                     </div>
                     <div className="parallax_container">
                         {(windowWidth < 800)? 
