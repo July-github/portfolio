@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.da61c456.css",
-    "main.js": "/portfolio/static/js/main.485740a9.js",
+    "main.css": "/portfolio/static/css/main.5ebac31a.css",
+    "main.js": "/portfolio/static/js/main.8b81e62c.js",
     "static/media/DSCF5614.jpg": "/portfolio/static/media/DSCF5614.c1eb0b0f138067cb71df.jpg",
     "static/media/ArgentBankHome.webp": "/portfolio/static/media/ArgentBankHome.e1a8e0d263ae4b31f88f.webp",
     "static/media/reactLogo.webp": "/portfolio/static/media/reactLogo.9f9f362e7b7e61581585.webp",
@@ -9,22 +9,22 @@
     "static/media/reduxLogo.webp": "/portfolio/static/media/reduxLogo.8911a7a501aa959ce834.webp",
     "static/media/jestLogo.webp": "/portfolio/static/media/jestLogo.bd284bfe9cf9a51c8bff.webp",
     "static/media/GitHubLogo.jpg": "/portfolio/static/media/GitHubLogo.2444c54fd88ae684e5a7.jpg",
-    "static/media/FishEyeResponsive.webp": "/portfolio/static/media/FishEyeResponsive.b732fc41d949c46b6fe7.webp",
     "static/media/FishEye.webp": "/portfolio/static/media/FishEye.3ba63508d19f0c41f4cb.webp",
     "static/media/KasaResponsive.webp": "/portfolio/static/media/KasaResponsive.440b1b0ae3a77d09925e.webp",
     "static/media/PetitsPlats.webp": "/portfolio/static/media/PetitsPlats.2807dcd7ae28c4b21f86.webp",
+    "static/media/FishEyeResponsive.webp": "/portfolio/static/media/FishEyeResponsive.8c5d79b98de112d1b8a4.webp",
     "static/media/SportSeeDash.webp": "/portfolio/static/media/SportSeeDash.b03c39a6931026d25255.webp",
-    "static/media/ArgentBankResponsive.webp": "/portfolio/static/media/ArgentBankResponsive.6d0d6ad7fb92e175b4f7.webp",
     "static/media/HRNetHome.webp": "/portfolio/static/media/HRNetHome.4c600733082a11d56872.webp",
+    "static/media/ArgentBankResponsive.webp": "/portfolio/static/media/ArgentBankResponsive.f2424cf53d9c1567f557.webp",
     "static/media/BilledConnect.webp": "/portfolio/static/media/BilledConnect.018a68458d140707beef.webp",
     "static/media/LesPetitsPlatsResponsive.webp": "/portfolio/static/media/LesPetitsPlatsResponsive.a5cff4881ed3aae7faf6.webp",
-    "static/media/HRNetResponsive.webp": "/portfolio/static/media/HRNetResponsive.df5bcbe308b4256f663c.webp",
+    "static/media/HRNetResponsive.webp": "/portfolio/static/media/HRNetResponsive.d1aae10d7841185cfe74.webp",
     "index.html": "/portfolio/index.html",
-    "main.da61c456.css.map": "/portfolio/static/css/main.da61c456.css.map",
-    "main.485740a9.js.map": "/portfolio/static/js/main.485740a9.js.map"
+    "main.5ebac31a.css.map": "/portfolio/static/css/main.5ebac31a.css.map",
+    "main.8b81e62c.js.map": "/portfolio/static/js/main.8b81e62c.js.map"
   },
   "entrypoints": [
-    "static/css/main.da61c456.css",
-    "static/js/main.485740a9.js"
+    "static/css/main.5ebac31a.css",
+    "static/js/main.8b81e62c.js"
   ]
 }
