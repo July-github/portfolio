@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5ebac31a.css",
-    "main.js": "/portfolio/static/js/main.13cd1a1a.js",
+    "main.css": "/portfolio/static/css/main.5baaef66.css",
+    "main.js": "/portfolio/static/js/main.8bbe5751.js",
     "static/media/DSCF5614.jpg": "/portfolio/static/media/DSCF5614.c1eb0b0f138067cb71df.jpg",
     "static/media/ArgentBankHome.webp": "/portfolio/static/media/ArgentBankHome.e1a8e0d263ae4b31f88f.webp",
     "static/media/reactLogo.webp": "/portfolio/static/media/reactLogo.9f9f362e7b7e61581585.webp",
@@ -20,11 +20,11 @@
     "static/media/LesPetitsPlatsResponsive.webp": "/portfolio/static/media/LesPetitsPlatsResponsive.a5cff4881ed3aae7faf6.webp",
     "static/media/HRNetResponsive.webp": "/portfolio/static/media/HRNetResponsive.d1aae10d7841185cfe74.webp",
     "index.html": "/portfolio/index.html",
-    "main.5ebac31a.css.map": "/portfolio/static/css/main.5ebac31a.css.map",
-    "main.13cd1a1a.js.map": "/portfolio/static/js/main.13cd1a1a.js.map"
+    "main.5baaef66.css.map": "/portfolio/static/css/main.5baaef66.css.map",
+    "main.8bbe5751.js.map": "/portfolio/static/js/main.8bbe5751.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ebac31a.css",
-    "static/js/main.13cd1a1a.js"
+    "static/css/main.5baaef66.css",
+    "static/js/main.8bbe5751.js"
   ]
 }
