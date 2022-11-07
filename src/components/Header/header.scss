@@ -45,3 +45,8 @@
         top: 100%;
     }
 }
+@media (max-width: 300px) {
+    .header_Wrapper > a {
+        font-size: 20px;
+    }
+}
