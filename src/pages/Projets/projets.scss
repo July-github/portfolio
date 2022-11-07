@@ -13,12 +13,16 @@
     display: flex;
     align-items: center;
     margin: 5% 0 10% 0;
-    height: auto;
+    height: 100%;
     padding: 0 5%;
     box-sizing: border-box;
 
     &:nth-child(odd) {
         flex-direction: row-reverse;
+
+        & > .parallax_container > .background_image  {
+            background-position: left;
+        }
     }
 }
 
@@ -30,7 +34,7 @@
     width: 100%;
 
     > a, img {
-        width: 60px;
+        width: auto;
         height: 60px;
         margin: 10px;
         border-radius: 20px;
@@ -57,36 +61,55 @@
     margin: 0 0 0 20px;
     padding: 10px;
     width: 35%;
-    height: 100%;
     line-height: 1.5;
     overflow-y: scroll;
     overflow-x: hidden;
 
     > .project_infos {
-        height: 100%;
         width: 100%;
     }
 }
 
 .parallax_container {
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 700px;
     overflow: hidden;
 
     >.background_image {
         width: 100%;
         height: 100%;
         background-attachment: fixed;
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         box-shadow: inset 2px 2px 30px #ffffff, inset -10px -10px 30px #191818;
     }
 }
 
-@media (max-width: 900px) {
+// @media (max-width: 1000px) {
+//     .project, .project:nth-child(odd) {
+//         flex-direction: column-reverse;
+
+//         > .projects_text {
+//             margin: 10px 0;
+//             width: 100%;
+//             box-sizing: border-box;
+//         }
+//         > .parallax_container {
+//             width: 100%;
+
+//             > .background_image {
+//                 // background-size: 100% 50%;
+//                 background-position: center;
+//             }
+//         }
+//     }
+// }
+
+@media (max-width: 800px) {
     .project, .project:nth-child(odd) {
         flex-direction: column-reverse;
+        margin: 5% 0;
 
         > .projects_text {
             margin: 10px 0;
@@ -95,12 +118,47 @@
         }
         > .parallax_container {
             width: 100%;
+            height: 100%;
+            align-content: center;
+
+            > .background_image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                transform: translateY(20px);
+                -webkit-transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                -o-transform: translateY(20px);
+                transition: transform 1s ease-in-out;
+                -webkit-transition: transform 1s ease-in-out;
+                -moz-transition: transform 1s ease-in-out;
+                -ms-transition: transform 1s ease-in-out;
+                -o-transition: transform 1s ease-in-out;
+}
+            > .background_image.scrollingDown {
+                transform: translateY(-20px);
+                -webkit-transform: translateY(-20px);
+                -moz-transform: translateY(-20px);
+                -ms-transform: translateY(-20px);
+                -o-transform: translateY(-20px);
+                transition: transform 1s ease-in-out;
+                -webkit-transition: transform 1s ease-in-out;
+                -moz-transition: transform 1s ease-in-out;
+                -ms-transition: transform 1s ease-in-out;
+                -o-transition: transform 1s ease-in-out;
+}
         }
     }
 }
 @media (max-width: 600px) {
     .project {
         padding: 0;
+
+        > .projects_text {
+            padding: 10px 15px;
+        }
     }
 }
 

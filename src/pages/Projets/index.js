@@ -10,7 +10,9 @@ import { ProjectCard } from '../../components/ProjectCard'
 export function Projets(){
     const [entrance, setEntrance] = useState(false)
     const [windowWidth, setWindowWidth] = useState(1600)
-    
+    const [scrollingDown, setScrollingDown] = useState(false)
+    const [scrollingUp, setScrollingUp] = useState(false)
+
     useEffect(()=> {
         setWindowWidth(window.innerWidth)
         const timer = setTimeout(()=> setEntrance(true), 5000)
@@ -20,6 +22,26 @@ export function Projets(){
     window.addEventListener('resize', e => {setWindowWidth(window.innerWidth)})
 
     datas.map(el => !el.responsiveImg ? el.img : el.responsiveImg)
+
+    const scrollableElement = document.body;
+
+    scrollableElement.addEventListener('wheel', checkScrollDirection);
+
+    function checkScrollDirection(event) {
+        if (checkScrollDirectionIsUp(event)) {
+            setScrollingDown(false)
+        } else {
+            setScrollingDown(true)
+        }
+    }
+
+    function checkScrollDirectionIsUp(event) {
+        if (event.wheelDelta) {
+            return event.wheelDelta > 0;
+        } else {
+            return event.deltaY < 0;
+        }
+    }
 
     return (
         !entrance? 
@@ -50,12 +72,18 @@ export function Projets(){
                     <div className="parallax_container">
                         {(windowWidth < 800)? 
                             `${el.responsiveImg}`? 
-                                <div className='background_image' style={{backgroundImage: `url(${el.responsiveImg})`}}></div>
-                                :
-                                <div className='background_image' style={{backgroundImage: `url(${el.img})`}}></div>
+                                scrollingDown ? 
+                                    <img className='background_image scrollingDown' src={el.responsiveImg} alt='project_image'/>
+                                    : 
+                                    <img className='background_image' src={el.responsiveImg} alt='project_image'/>
                             :
-                                <div className='background_image' style={{backgroundImage: `url(${el.img})`}}></div>
-                            }
+                                scrollingDown?
+                                    <img className='background_image scrollingDown' src={el.img} alt='project_image'/>
+                                    :
+                                    <img className='background_image' src={el.img} alt='project_image'/>
+                        :
+                        <div className='background_image' style={{backgroundImage: `url(${el.img})`}}></div>
+                        }
                     </div>  
                 </div>
             )}
